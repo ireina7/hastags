@@ -1,6 +1,7 @@
 module Main where
 
-import Lib
+import HasTags
 
 main :: IO ()
 main = print "Welcome to HasTags!"
+
