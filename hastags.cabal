@@ -26,10 +26,12 @@ source-repository head
 library
   exposed-modules:
       HasTags
+      HasTags.Core.Css
       HasTags.Core.Html
       HasTags.Data.Attribute
       HasTags.Data.Attributes
       HasTags.Data.Property
+      HasTags.Data.Tag
       HasTags.Data.Tags
       HasTags.Data.XML
   other-modules:

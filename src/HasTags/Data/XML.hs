@@ -22,4 +22,6 @@ tag = Tagged
 raw :: String -> XML
 raw = Raw
 
+text = raw
+
 

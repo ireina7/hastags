@@ -1,5 +1,6 @@
 module HasTags.Data.Tags where
 import HasTags.Data.XML (tag, XML (properties))
+import qualified HasTags.Data.Tag as Tag
 
 div        = tag "div"
 img props  = tag "img" props []

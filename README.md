@@ -7,7 +7,7 @@
 ```haskell
 import HasTags
 toHtml $
-  (tag "div") [attr "class" =: "example"] [
+  (tag "section") [attr "class" =: "example"] [
     (tag "h2") [ 
       (tag "span") [attr "style" =: "color:red;"] [raw "A simple example"]
     ]
@@ -16,20 +16,20 @@ toHtml $
 above can be simplified to
 ```haskell
 import HasTags
-import HasTags.Data.Tags (h2)
+import HasTags.Data.Tags (section, h2)
 import HasTags.Data.Attributes (cls, style)
 import qualified HasTags.Data.Tags as Tags
 import qualified HasTags.Data.Attributes as Attrs
 toHtml $
-  Tags.div[cls =: "example"] 
-    [ h2[Tags.span[style =: "color:red;"] ["A simple example"]]
+  section[cls =: "example"] 
+    [ h2[Tags.span[style =: "color:red;"] [text "A simple example"]]
     ]
 ```
 output
 ```html
-<div class="example">
+<section class="example">
   <h2>
     <span style="color:red;">A simple example</span>
   </h2>
-</div>
+</section>
 ```
