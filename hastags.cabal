@@ -28,6 +28,7 @@ library
       HasTags
       HasTags.Core.Html
       HasTags.Data.Attribute
+      HasTags.Data.Attributes
       HasTags.Data.Property
       HasTags.Data.Tags
       HasTags.Data.XML
